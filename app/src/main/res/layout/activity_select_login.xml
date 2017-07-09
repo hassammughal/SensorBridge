@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade1"
+
+    tools:context="com.example.hassam.sensorbridge.activities.SelectLogin">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_sb"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Sensor Bridge"
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/text"
+        android:text="Login"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/textView" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/text"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    />
+    <Button
+        android:id="@+id/btn_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textColor="@color/text"
+        android:text="Create New Account"
+        android:layout_alignBaseline="@+id/btn_login"
+        android:layout_alignBottom="@+id/btn_login"
+        android:layout_toEndOf="@+id/btn_login"
+        android:layout_marginStart="23dp" />
+
+    <Button
+        android:id="@+id/btn_login_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_SignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/text"
+        android:text="Log In with Facebook" />
+
+    <Button
+        android:id="@+id/btn_about_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/grey"
+        android:text="Why do I need an Account?" />
+
+
+
+</RelativeLayout>
